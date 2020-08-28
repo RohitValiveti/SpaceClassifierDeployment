@@ -9,10 +9,10 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://www.dropbox.com/s/6bgq8t6yextloqp/export.pkl?raw=1'
+export_file_url = 'https://github.com/RohitValiveti/SpaceClassifierDeployment/releases/download/v1.0/export.pkl'
 export_file_name = 'export.pkl'
 
-classes = ['black', 'grizzly', 'teddys']
+classes = ["Asteroid", "Cat’s Eye Nebula", "Ceres", "Crab Nebula", "Eagle Nebula", "Earth", "Helix Nebula", "Horsehead Nebula", "Hourglass Nebula", "Jupiter", "Makemake", "Mars", "Mercury", "Moon", "Neptune", "Orion_Nebula", "Pluto", "Saturn", "Sun", "Uranus", "Venus"]
 path = Path(__file__).parent
 
 app = Starlette()
