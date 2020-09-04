@@ -1,40 +1,70 @@
 <html lang='en'>
 <head>
-  <meta charset='utf-8'>
-  <link rel='stylesheet' href='../static/style.css'>
-  <script src='../static/client.js'></script>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' href='../static/style.css'>
+    <script src='../static/client.js'></script>
+    <title>Space Classifier</title>
 </head>
 <body>
-<div>
-  <div class='center'>
-    <div class='title'>Classify Images of Astronomical Object</div>
-    <p>
-      Use images of planets, nebulae, or the sun/moon!
-    </p>
-    <div class='content'>
-      <div class='no-display'>
-        <input id='file-input'
-               class='no-display'
-               type='file'
-               name='file'
-               accept='image/*'
-               onchange='showPicked(this)'>
-      </div>
-      <button class='choose-file-button' type='button' onclick='showPicker()'>Select Image</button>
-      <div class='upload-label'>
-        <label id='upload-label'>No file chosen</label>
-      </div>
-      <div>
-        <img id='image-picked' class='no-display' alt='Chosen Image' height='200'>
-      </div>
-      <div class='analyze'>
-        <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze</button>
-      </div>
-      <div class='result-label'>
-        <label id='result-label'></label>
-      </div>
-    </div>
-  </div>
-</div>
+
+    <header class="nav">
+        <a href="index.html"><img class="logo" src="../images/Logo.png" alt="logo"></a>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="about.html"><strong>About</strong></a></li>
+                <li><a href="https://rohitvaliveti.github.io/" target="_blank"><strong>Who Made this?</strong></a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="title">
+            <h1>What's up in the Sky?</h1>
+            <h4>Upload an image of a planet, nebula, asteroid, sun, or moon to learn what it is!</h4>
+        </div>
+
+        <div class='content'>
+            <div class="first">
+                <div class='no-display'>
+                    <input id='file-input'
+                        class='no-display'
+                        type='file'
+                        name='file'
+                        accept='image/*'
+                        onchange='showPicked(this)'>
+                </div>
+
+                <button class='choose-file-button' type='button' onclick='showPicker()'>Upload an Image</button>
+                
+                <div class='upload-label'>
+                    <label id='upload-label'>No file chosen</label>
+                </div>
+
+                <div>
+                    <img id='image-picked' class='no-display' alt='Chosen Image' height='200'>
+                </div>
+            </div>
+
+            <div class="second">
+                <div class='analyze'>
+                    <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Classify</button>
+                </div>
+
+                <div class='result-label'>
+                    <label id='result-label'></label>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <footer class="footer">
+		<div class="container">
+			<h4>Created by Rohit Valiveti - Aug 2020</h4>
+		</div>
+	</footer>
+
 </body>
 </html>
