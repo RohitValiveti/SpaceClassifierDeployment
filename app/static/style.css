@@ -13,6 +13,12 @@ body {
 /************************NAVBAR ***********************/
 .nav{
     background-color: #1F2833;
+    padding: 1rem;
+}
+
+.nav h2{
+    font-family: Candara;
+    color: #45A19E;
 }
 
 li, a {
@@ -66,7 +72,8 @@ main{
     width: 100%;
     height: 100%;
     padding: 0rem 2rem;
-    background: url(../images/wall.jpg) no-repeat center fixed;
+    /*background: url(../images/wall.jpg) no-repeat center fixed;*/
+    background-color: #0B0C10;
     background-size: cover;
 }
 
