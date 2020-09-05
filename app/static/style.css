@@ -157,6 +157,11 @@ button:focus {
     outline: 0;
 }
 
+.result-label{
+    color: #45A19E;
+    font-family: Candara;
+    font-weight: bolder;
+}
 
 /****************FOOTER***********************/
 
